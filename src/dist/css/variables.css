@@ -1,0 +1,13 @@
+:root {
+    --primary-color: #5ae280;
+    --secondary-color: #939CBD;
+    --thertiary-color: #FFF;
+
+    --bg-primary-color: #E3E9FF;
+    --bg-secondary-color: var(--third-color);
+    --bg-thertiary-color: var(--primary-color);
+
+    --danger-color: #FF002E;
+
+    --trash-icon: @import url("https://www.flaticon.com/free-icons/delete");
+}
