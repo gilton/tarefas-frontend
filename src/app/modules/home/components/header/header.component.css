@@ -8,5 +8,5 @@ h1 {
   font-size: 18px;
   color: var(--thertiary-color);
 
-  background-color: #1e8615;
+  background-color: var(--primary-color);
 }
