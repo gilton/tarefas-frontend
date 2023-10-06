@@ -11,7 +11,7 @@
     --secondary-txt-color: var(--thertiary-color);
 
 
-    --danger-color: #FF002E;
+    --danger-color: #D75850;
 
     --trash-icon: @import url("https://www.flaticon.com/free-icons/delete");
 }
