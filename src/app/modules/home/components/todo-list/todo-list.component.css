@@ -11,10 +11,10 @@ section {
 
 }
 
-.loading {
-    /* background-image: url("../../../../../assets/img/bg-task.png"); */
+section.loading {
+    background-image: url("../../../../../assets/img/todo-list.png");
     background-repeat: no-repeat;
-    background-position: center 30px;
+    background-position: center -12px;
 }
 
 ul {
@@ -30,7 +30,6 @@ ul li {
   
 input[type="checkbox"] {
     width: 5%;
-    margin: 0 5px;
 }
 
 input[type="text"] {
@@ -46,7 +45,6 @@ input[type="text"] {
 }
 
 button {
-  width: 5px;
   background: none;
   border: none;
 }
