@@ -1,15 +1,17 @@
-<section>
-    <ul>
-        <li>
-            <input type="text" name="" id="txt">
-            <input type="checkbox" name="" id="ckb">
+<section [ngClass]="{'loading': !tarefaList.length}">
 
-            <button type="button">
+    <ul *ngIf="tarefaList.length">
+        <li *ngFor="let item of tarefaList; let i = index">
+            <input type="checkbox" id="ckb" [(ngModel)]="item.checked">
+            <input type="text" id="txt" (keyup)="validaEntrada(item.tarefa, i)"
+                [(ngModel)]="item.tarefa" [ngClass]="{'checked': item.checked}">
+
+            <button type="button" (click)="deleteTarefa(i)">
                 <img src="assets/icons/trash-25x.png" />
             </button>
         </li>
     </ul>
 </section>
 
-<app-todo-input-add-itens></app-todo-input-add-itens>
-<app-todo-button-delete-all></app-todo-button-delete-all>
+<app-todo-input-add-itens (emitTarefa)="insertTarefa($event)"></app-todo-input-add-itens>
+<app-todo-button-delete-all *ngIf="tarefaList.length" (click)="deleteALLTarefa()"></app-todo-button-delete-all>
