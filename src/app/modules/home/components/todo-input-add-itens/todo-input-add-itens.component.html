@@ -1,1 +1,6 @@
-<input type="text" placeholder="Digite sua nova Tarefa aqui...">    
+<input 
+    type="text" 
+    placeholder="Digite sua nova Tarefa aqui..." 
+    [(ngModel)]="novaTarefa" 
+    (keyup.enter)="addTarefa()"
+>    
